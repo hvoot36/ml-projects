@@ -39,7 +39,6 @@ cnn.compile(optimizer = 'adam', loss = 'binary_crossentropy', metrics = ['accura
 cnn.fit(x = training_set, validation_data = test_set, epochs = 25)
 
 # Making a single prediction
-
 import numpy as np
 from keras.preprocessing import image
 test_image = image.load_img('./dataset/single_prediction/cat_or_dog_1.jpg', target_size = (64, 64))
